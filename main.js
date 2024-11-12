@@ -101,7 +101,7 @@ app.post('/ia', async (req,res)=>{
 
 })
 
-app.listen(3000, () => console.log('Servidor Online'))
+app.listen(process.env.PORT || 3000, () => console.log('Servidor Online'))
 
 //https.createServer(options, app).listen(3000)
 
